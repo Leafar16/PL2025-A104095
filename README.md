@@ -7,4 +7,4 @@
 ![Rafael Pereira](rafael.jpeg)  
 
 ## Sobre o repositório
-Este repositório foi criado para armazenar os TPCs da cadeira de Engenharia Web do curso de Engenharia Informática.
+Este repositório foi criado para armazenar os TPCs da cadeira de Processamento de Linguagens do curso de Engenharia Informática.
