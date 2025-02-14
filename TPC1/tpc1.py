@@ -8,18 +8,17 @@ def adiciona_numero(ficheiro_nome):
             i=0
             if not (linha):
                 break
+            linha=linha.lower()
             while i in range(len(linha)):
                 caracter=linha[i]
                 if not (caracter):
                     break
                 if caracter.isalpha():
-                    caracter.lower()
                     if caracter=='o':
                         if linha[i:i+2]=='on':
                          multiplicador=1
                         if linha[i:i+3]=='off':
                          multiplicador=0
-
                 elif caracter.isdigit():
                     seguidos=0
                     j=i
