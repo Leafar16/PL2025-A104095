@@ -88,4 +88,4 @@ LexToken(NUMBER,1000,8,183)
 
 
 ## Resultados
-- [Código-fonte](lexer.py)
+- [Código-fonte](analisador_lexico.py)
