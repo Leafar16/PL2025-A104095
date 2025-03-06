@@ -42,7 +42,7 @@ Esta pasta serve para armazenar o TPC4, que decorreu na semana de 28 de fevereir
 
 ## Exemplo de Entrada e Saída
 
-### **Entrada (Consulta SPARQL)**
+### **Entrada**
 ```sparql
 # DBPedia: obras de Chuck Berry
 select ?nome ?desc where {
@@ -54,7 +54,7 @@ select ?nome ?desc where {
 } LIMIT 1000
 ```
 
-### **Saída (Tokens Gerados)**
+### **Saída**
 ```
 LexToken(COMMENT,'# DBPedia: obras de Chuck Berry',1,0)
 LexToken(SELECT,'select',2,32)
