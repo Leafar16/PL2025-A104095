@@ -87,5 +87,5 @@ LexToken(NUMBER,1000,8,183)
 ```
 
 
-## Resultados
+## Código
 - [Código-fonte](analisador_lexico.py)
