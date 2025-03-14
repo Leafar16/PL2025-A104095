@@ -166,15 +166,16 @@ while(loop):
                     
 
     elif (comando==r"sair" or comando=="SAIR"):
-        troco=devolve_dinheiro(current_money)
-        string=""
+        if(current_money!=0):
+            troco=devolve_dinheiro(current_money)
+            string=""
 
-        for key,value in troco.items():
-            if value!=0:
-                string+=f"{value}x {key}, "
-        string = string[:-2] + "."
+            for key,value in troco.items():
+                if value!=0:
+                    string+=f"{value}x {key}, "
+            string = string[:-2] + "."
 
-        print("Pode retirar o troco: "+string)
+            print("Pode retirar o troco: "+string)
         print("Até à próxima")
         loop=False
     else:
