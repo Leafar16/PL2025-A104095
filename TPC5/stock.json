@@ -1,0 +1,52 @@
+{
+    "stock": [
+        {
+            "cod": "A23",
+            "nome": "água 0.5L",
+            "quant": 6,
+            "preco": 0.7
+        },
+        {
+            "cod": "A24",
+            "nome": "cola 0.5L",
+            "quant": 10,
+            "preco": 1
+        },
+        {
+            "cod": "A25",
+            "nome": "suco laranja 1L",
+            "quant": 13,
+            "preco": 2.5
+        },
+        {
+            "cod": "A26",
+            "nome": "refrigerante 2L",
+            "quant": 5,
+            "preco": 3.0
+        },
+        {
+            "cod": "A27",
+            "nome": "leite 1L",
+            "quant": 12,
+            "preco": 2.0
+        },
+        {
+            "cod": "A28",
+            "nome": "café 500g",
+            "quant": 7,
+            "preco": 4.5
+        },
+        {
+            "cod": "A29",
+            "nome": "farinha de trigo 1kg",
+            "quant": 18,
+            "preco": 1.8
+        },
+        {
+            "cod": "A30",
+            "nome": "açúcar 1kg",
+            "quant": 18,
+            "preco": 2.2
+        }
+    ]
+}
