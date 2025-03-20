@@ -175,7 +175,6 @@ while(loop):
                     string+=f"{value}x {key}, "
             string = string[:-2] + "."
 
-            print("Pode retirar o troco: "+string)
         print("Até à próxima")
         loop=False
     else:
