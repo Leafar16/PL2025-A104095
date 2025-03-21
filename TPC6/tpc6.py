@@ -31,42 +31,37 @@ def proximo_token(): #serve para ler o proximo simbolo
     global prox_simb
     prox_simb=lexer.token()
 
-    
-def fator():#Lê o valor dos números retorna-o e lê o próximo token
+def fator():
     global prox_simb
-    if prox_simb and prox_simb.type=="NUM":
-        valor=prox_simb.value
+    if prox_simb.type == "NUM":
+        resultado=float(prox_simb.value)
         proximo_token()
-        return valor
+    return resultado
 
 def termo():
+    resultado=fator()
     global prox_simb
-    resultado=fator() #É esperado um numero antes da operação
-
-    while prox_simb and prox_simb.type in ("DIV","MULT"):
-        if prox_simb.type=="DIV":
-            proximo_token()
-            resultado/=fator()
+    while prox_simb and prox_simb.type in ("MULT" "DIV"):
         if prox_simb.type=="MULT":
             proximo_token()
             resultado*=fator()
-    
+        elif prox_simb.type=="DIV":
+            proximo_token()
+            resultado/=fator()
     return resultado
+    
 
 def expressao():
-    global prox_simb
     resultado=termo()
-
-    while prox_simb and prox_simb.type in ("ADD","MINUS" ):
+    global prox_simb
+    while prox_simb and prox_simb.type in ("ADD" "MINUS"):
         if prox_simb.type=="ADD":
             proximo_token()
             resultado+=termo()
         elif prox_simb.type=="MINUS":
             proximo_token()
             resultado-=termo()
-
     return resultado
-
 
 
 def analisar(frase):

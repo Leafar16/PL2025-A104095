@@ -59,4 +59,4 @@ Resultado: 10
 ```
 
 ## Código
-- [Código-fonte](analisador_lexico.py)
+- [Código-fonte](tpc6.py)
